@@ -42,7 +42,8 @@ namespace CameraNS
         public override void Update(GameTime gameTime)
         {
             Player p;
-            p = (Player)Game.Components.FirstOrDefault(pl => pl.GetType() == typeof(Player));
+            p = (Player)Game.Components
+                .FirstOrDefault(pl => pl.GetType() == typeof(Player));
             if (p != null)
                 follow(p.Position,Game.GraphicsDevice.Viewport);
 
