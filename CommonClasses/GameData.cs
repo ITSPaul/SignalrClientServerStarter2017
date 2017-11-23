@@ -16,7 +16,6 @@ namespace GameData
 
     public class PlayerData
     {
-        public string header = string.Empty;
         public string playerID;
         public string imageName = string.Empty;
         public string GamerTag = string.Empty;
@@ -28,7 +27,7 @@ namespace GameData
         public PlayerData() { }
         public PlayerData(string messageHeader, string ImgName, string id, string tag, int x, int y)
         {
-            header = messageHeader;
+            
             playerID = id;
             imageName = ImgName;
             playerPosition.X = x;

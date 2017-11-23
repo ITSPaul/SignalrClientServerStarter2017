@@ -12,6 +12,7 @@ namespace Week21112016
     public class GameHub : Hub
     {
         static List<PlayerData> Players = new List<PlayerData>();
+        static List<string> characters = new List<string>() { "Player 1", "Player 2", "Player 3", "Player 4" };
         static Random r = new Random();
         static List<CollectableData> Collectables = new List<CollectableData>()
         {
